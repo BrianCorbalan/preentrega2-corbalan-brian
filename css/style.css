@@ -31,6 +31,7 @@ header{
 
 
 header nav ul{
+    
     display: flex;
     list-style: none;
     gap: 1rem;
@@ -61,6 +62,18 @@ header nav ul li a{
 .usuario a img{
 
     width: 30px;
+}
+
+/* main */
+
+main{
+    margin-top: 90px;
+    color: white;
+}
+
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* títulos */
@@ -151,15 +164,8 @@ footer{
 
 
 
-
 /*estilos index*/
 
-main{
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-
-}
 
 /* Nuevos Lanzamientos */
 
@@ -247,7 +253,12 @@ main .lanzamientoUno, .lanzamientoDos{
 
 
     /* main style*/
-    main {
+
+    main{
+        margin-top: 90px;
+
+    }
+    .container {
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -295,7 +306,7 @@ main .lanzamientoUno, .lanzamientoDos{
         display: none;
     }
 
-    main {
+    .container {
         margin-left: 10%;
         margin-right: 10%;
     }
