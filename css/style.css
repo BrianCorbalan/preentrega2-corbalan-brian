@@ -90,9 +90,13 @@ footer{
     color: white;
 }
 
+.logoFooter{
+    display: flex;
+    align-items: center;
+}
 
 .resumen{
-    width: 300px;
+    width: 200px;
 }
 
 .legales{
@@ -107,8 +111,10 @@ footer{
     margin: 20px;
 }
 
-.redes a{
-    margin: 10px;
+.redes{
+    align-items: center;
+    display: flex;
+    gap: 2rem;
 }
 
 /* estilos banner */
@@ -155,6 +161,8 @@ main{
 
 }
 
+/* Nuevos Lanzamientos */
+
 .nuevosLanzamientos{
     height: 100vh;
     display: grid;
@@ -183,22 +191,43 @@ main .lanzamientoUno, .lanzamientoDos{
     
 }
 
+.ofertas p{
+    display: none;
+}
+
 .off{
     color: #e30613;
 
 }
 
-.productos{
-    display: inline-block;
-    margin-bottom: 20px;
+/* Destacados de la semana */
+
+.destacadosSemana{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,50%);
+    gap: 1rem;
+    margin-bottom: 2rem;
+
 }
 
+.productoCinco{
+    display: none;
+}
+
+
+
+/*
 .productos img{
     background-color: white;
     border-radius: 15px;
     padding: 10px;
     margin: 10px 5px 10px 0px;
-}
+}*/
+
+
+
 
 
 /* mq tablet */
@@ -225,6 +254,10 @@ main .lanzamientoUno, .lanzamientoDos{
     
     
     /*nuevos lanzamientos estilos */
+    .ofertas p{
+        display: block;
+        font-size: 12px;
+    }
     .nuevosLanzamientos{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 33%);
@@ -243,6 +276,13 @@ main .lanzamientoUno, .lanzamientoDos{
     .lanzamientoTres, .lanzamientoCuatro{
         grid-column: span 1;
     }
+
+    /*nuevos Destacados de la semana */
+
+    /* footer */
+    .resumen{
+        width: 300px;
+    }
     
 }
 
@@ -260,6 +300,12 @@ main .lanzamientoUno, .lanzamientoDos{
         margin-right: 10%;
     }
 
+    /*nuevos lanzamientos estilos */
+    .ofertas p{
+        display: block;
+        font-size: 16px;
+    }
+
     .nuevosLanzamientos{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 33%);
@@ -274,7 +320,22 @@ main .lanzamientoUno, .lanzamientoDos{
         grid-row: span 1;
     }
 
+    /*Destacados de la semana */
+
+    .productoCinco{
+        display: block;
+    }
+
+    .destacadosSemana{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+    }
     
+    /* footer */
+    .resumen{
+        width: 600px;
+    }
+        
 }
 
 
