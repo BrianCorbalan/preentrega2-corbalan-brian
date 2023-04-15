@@ -155,20 +155,32 @@ footer{
 
     width: 100%;
         */
-
+    
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
     margin-bottom: 1rem;
     margin-top: 90px;
 }
 
 .bannerPrincipal h1{
 
-    font-size: 5rem;
+    font-size: 2rem;
 
 }
 
 .tituloPrincipal{
     padding: 20px;
 }
+
+.bannerSecundario{
+    margin-bottom: 2rem;
+}
+
 
 .bannerSecundarioTitulo{
     position: absolute;
@@ -181,7 +193,7 @@ footer{
 
 
 .bannerSecundarioTitulo h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
@@ -219,8 +231,7 @@ main .lanzamientoUno, .lanzamientoDos{
     height: 85%;
     object-fit: cover;
     background-color: white;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
 }
   /* 
 .ofertas p{
@@ -261,166 +272,6 @@ main .lanzamientoUno, .lanzamientoDos{
 }*/
 
 
-
-
-
-/* mq tablet */
-
-@media screen and (min-width: 600px){
-
-    /*header style */
-    #menu{
-        display: none;
-    }
-
-    #navbarDesktop {
-        align-items: center;
-        display: flex;
-        
-    }
-
-
-    /* main style*/
-
-    main{
-        margin-top: 90px;
-
-    }
-    .container {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    /*Baner secundario estilo */
-    .bannerSecundario {
-        height: 200px;
-    }
-
-    .bannerSecundarioTitulo h1{
-        font-size: 4rem;
-    }
-    
-    
-    /*nuevos lanzamientos estilos */
-
-    .nuevosLanzamientos{
-        height: 100vh;
-    }
-    .ofertas p{
-        display: block;
-        font-size: 12px;
-    }
-    .nuevosLanzamientos{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 33%);
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .ofertas{
-        margin-bottom: 2rem;
-    }
-
-    .ofertas a img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .lanzamientoUno {
-        grid-row: span 3;
-        grid-column: span 2;
-    }
-
-    .lanzamientoDos {
-        grid-row: span 2;
-        grid-column: span 2;
-    }
-
-    .lanzamientoTres, .lanzamientoCuatro{
-        grid-column: span 1;
-    }
-
-    /*nuevos Destacados de la semana */
-
-    /* footer */
-    .resumen{
-        width: 300px;
-    }
-    
-}
-
-/* mq desktop */
-
-
-@media screen and (min-width: 1024px){
-
-    #menu{
-        display: none;
-    }
-
-    .container {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    /*Baner secundario estilo */
-    .bannerSecundario {
-        height: 250px;
-    }
-
-    .bannerSecundarioTitulo h1{
-        font-size: 5rem;
-    }
-    /*nuevos lanzamientos estilos */
-    .ofertas p{
-        display: block;
-        font-size: 16px;
-    }
-
-    .nuevosLanzamientos{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 33%);
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .ofertas{
-        margin-bottom: 3rem;
-    }
-
-    .ofertas a img{
-        width: 100%;
-        height: 100%;   
-    }
-
-    .lanzamientoUno {
-        grid-row: span 3;
-    }
-
-    .lanzamientoDos, .lanzamientoTres, .lanzamientoCuatro {
-        grid-column: span 2;
-        grid-row: span 1;
-    }
-
-    /*Destacados de la semana */
-
-    .productoCinco{
-        display: block;
-    }
-
-    .destacadosSemana{
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 1fr;
-    }
-    
-    /* footer */
-    .resumen{
-        width: 600px;
-    }
-        
-}
-
-
 /*estilos productos*/
 
 
@@ -428,16 +279,12 @@ main .lanzamientoUno, .lanzamientoDos{
 /*estilos ofertas*/
 
 .ofertasOfertas{
-    display: inline-block;
-    margin-bottom: 20px;
+    height: 125vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,50%);
 }
 
-.ofertasOfertas a img{
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px 10px 10px 0px;
-}
 
 .ofertasOfertas p {
     text-align: center;
@@ -547,5 +394,195 @@ main form fieldset legend{
 
 
 
+/* mq tablet */
+
+@media screen and (min-width: 600px){
+
+    /*header style */
+    #menu{
+        display: none;
+    }
+
+    #navbarDesktop {
+        align-items: center;
+        display: flex;
+        
+    }
+
+
+    /* main style*/
+
+    main{
+        margin-top: 90px;
+
+    }
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Banner Principal */    
+    .bannerPrincipal h1{
+        font-size: 3rem;    
+    }
+
+    /*Baner secundario estilo */
+    .bannerSecundario {
+        height: 200px;
+    }
+
+    .bannerSecundarioTitulo h1{
+        font-size: 4rem;
+    }
+    
+    
+    /*nuevos lanzamientos estilos */
+
+    
+    .ofertas p{
+        display: block;
+        font-size: 12px;
+    }
+
+    .nuevosLanzamientos{
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 33%);
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .ofertas{
+        margin-bottom: 2rem;
+    }
+
+    .ofertas a img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .lanzamientoUno {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    .lanzamientoDos {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .lanzamientoTres, .lanzamientoCuatro{
+        grid-column: span 1;
+    }
+
+    /* Destacados de la semana */
+
+    /* pagina ofertas */
+
+    .ofertasOfertas{
+        height: 50vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100%;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .descuentoPrincipalUno{
+
+        grid-column: span 1;
+
+    }
+
+    .descuentoPrincipalDos{
+
+        grid-column: span 1;
+
+    }
+    /* footer */
+    .resumen{
+        width: 300px;
+    }
+    
+}
+
+/* mq desktop */
+
+
+@media screen and (min-width: 1024px){
+
+    #menu{
+        display: none;
+    }
+
+    .container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Banner Principal */    
+    .bannerPrincipal h1{
+        font-size: 5rem;    
+    }
+    
+    /*Baner secundario estilo */
+    .bannerSecundario {
+        height: 250px;
+    }
+
+    .bannerSecundarioTitulo h1{
+        font-size: 5rem;
+    }
+    /*nuevos lanzamientos estilos */
+    .ofertas p{
+        display: block;
+        font-size: 16px;
+    }
+
+    .nuevosLanzamientos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 33%);
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .ofertas{
+        margin-bottom: 3rem;
+    }
+
+    .ofertas a img{
+        width: 100%;
+        height: 100%;   
+    }
+
+    .lanzamientoUno {
+        grid-row: span 3;
+    }
+
+    .lanzamientoDos, .lanzamientoTres, .lanzamientoCuatro {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    /*Destacados de la semana */
+
+    .productoCinco{
+        display: block;
+    }
+
+    .destacadosSemana{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    /* footer */
+    .resumen{
+        width: 600px;
+    }
+
+    /* seccion ofertas */
+    .ofertasOfertas{
+        height: 75vh;
+    }    
+}
 
 
