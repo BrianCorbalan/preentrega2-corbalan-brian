@@ -170,6 +170,25 @@ footer{
     padding: 20px;
 }
 
+.bannerSecundarioTitulo{
+    position: absolute;
+    right: 15%;
+    top: 10px;
+    left: 15%;
+    color: #fff;
+    text-align: center;
+}
+
+
+.bannerSecundarioTitulo h1{
+    font-size: 3rem;
+}
+
+
+
+
+
+
 
 
 /*estilos index*/
@@ -271,6 +290,15 @@ main .lanzamientoUno, .lanzamientoDos{
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    /*Baner secundario estilo */
+    .bannerSecundario {
+        height: 200px;
+    }
+
+    .bannerSecundarioTitulo h1{
+        font-size: 4rem;
+    }
     
     
     /*nuevos lanzamientos estilos */
@@ -335,6 +363,14 @@ main .lanzamientoUno, .lanzamientoDos{
         margin-right: 10%;
     }
 
+    /*Baner secundario estilo */
+    .bannerSecundario {
+        height: 250px;
+    }
+
+    .bannerSecundarioTitulo h1{
+        font-size: 5rem;
+    }
     /*nuevos lanzamientos estilos */
     .ofertas p{
         display: block;
@@ -386,6 +422,7 @@ main .lanzamientoUno, .lanzamientoDos{
 
 
 /*estilos productos*/
+
 
 
 /*estilos ofertas*/
