@@ -313,7 +313,8 @@ main .lanzamientoUno, .lanzamientoDos{
 
 .nosotros {
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 2rem;
+
 }
 
 .nosotros h2{
@@ -322,17 +323,10 @@ main .lanzamientoUno, .lanzamientoDos{
 
 /*estilos contacto*/
 
-main form fieldset {
-    padding: 10px 20px 20px 10px;
-    margin: 0px 50px 10px 50px;
+fieldset {
+    display: flex;
 }
 
-main form fieldset legend{
-    text-align: center;
-    font-variant: initial;
-    padding: 10px;
-    border-radius: 10px;
-}
 
 .backgroundImg{
     background-image: url(../img/bg.jpg);
@@ -341,14 +335,12 @@ main form fieldset legend{
 }
 
 .formDatos {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 10px;
+
+    gap: 1rem;
 }
 
 .btnEnviar{
     margin-top: 10px;
-    margin-left: 50px;
     padding-bottom: 10px;
 
 }

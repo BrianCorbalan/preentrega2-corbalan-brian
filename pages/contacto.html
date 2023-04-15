@@ -92,44 +92,37 @@
     </header>
     <!-- Contenedor Principal -->
     <main class="backgroundImg">
-        <h1> ¡Contactanos!</h1>
-        <form action="">
+        <div id="carouselExampleCaptions" class="carousel slide ">
+            <div class="carousel-inner bannerSecundario">
+            <div class="carousel-item active">
+                <img src="../img/banner-principal.jpg" class=" w-100" alt="banner remeras">
+                <div class="bannerSecundarioTitulo d-md-block">
+                    <h1>¡Contactanos!</h1>
+                    <p>Dejanos tu consulta</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="container">
             <fieldset>
-                <legend> Dejanos tu consulta </legend>
                 <div>
                     <div class="formDatos">
-                        <label for="nombre">
-                            Nombre
-                        </label>
-                        <input type="text" name="nombres" id="nombre">
+                        <input type="text" name="nombres" id="nombre" placeholder="Nombre">
                     </div>
-
                     <div class="formDatos">
-                        <label for="email">
-                            Apellido
-                        </label>
-                        <input type="email" id="email">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                     </div>
-                </div>
-                    
+                </div>                    
                 <div>                
                     <div class="formDatos">
-                        <label for="email">
-                            E-Mail
-                        </label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" placeholder="E-Mail">
                     </div>
 
                     <div class="formDatos">
-                        <label for="numero">
-                            Teléfono
-                        </label>
-                        <input type="number" id="numero">
+                        <input type="number" id="email" placeholder="Teléfono">
                     </div>
                 </div>
-                <textarea id="text">
-                        
-                </textarea>
+                <textarea id="text" placeholder="Dejanos tu consulta acá"></textarea>
             </fieldset>
             <div class="btnEnviar">
                 <input type="submit">
