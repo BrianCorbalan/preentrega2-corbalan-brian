@@ -323,9 +323,6 @@ main .lanzamientoUno, .lanzamientoDos{
 
 /*estilos contacto*/
 
-fieldset {
-    display: flex;
-}
 
 
 .backgroundImg{
@@ -334,9 +331,24 @@ fieldset {
     background-size: cover;
 }
 
-.formDatos {
 
-    gap: 1rem;
+
+.formDatosContenedor {
+    gap: 16px;
+    display: flex;
+}
+
+.formDatos{
+
+    margin: 16px 0px 16px 0px;
+    width: 100%;
+}
+
+.formDatos input{
+    border-style: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
 }
 
 .btnEnviar{
@@ -354,11 +366,12 @@ fieldset {
 }
 
 #text{
-    width: 90%;
+    margin-top: 1rem;
+    width: 100%;
     height: 100px;    
     border-style: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 16px;
 
 }
 
