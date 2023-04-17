@@ -143,21 +143,6 @@ footer{
 /* estilos banner */
 
 .bannerPrincipal{
-        /*
-    display: flex;
-    align-items: center;
-    color: white;
-    background-image:url("../img/banner-principal.jpg");
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    z-index: -1;
-    position: fixed;
-
-    width: 100%;
-        */
-    
     position: absolute;
     right: 15%;
     bottom: 1.25rem;
@@ -235,12 +220,7 @@ main .lanzamientoUno, .lanzamientoDos{
     background-color: white;
     border-radius: 15px;    
 }
-  /* 
-.ofertas p{
-  display: none;
-    
-}
-*/
+
 
 .off{
     color: #e30613;
@@ -262,16 +242,6 @@ main .lanzamientoUno, .lanzamientoDos{
 .productoCinco{
     display: none;
 }
-
-
-
-/*
-.productos img{
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px 5px 10px 0px;
-}*/
 
 
 /*estilos productos*/
