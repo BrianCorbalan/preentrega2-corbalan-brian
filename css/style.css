@@ -71,10 +71,7 @@ main{
     color: white;
 }
 
-.container{
-    padding-left: 30px;
-    padding-right: 30px;
-}
+
 
 /* títulos */
 
@@ -428,10 +425,7 @@ main .lanzamientoUno, .lanzamientoDos{
         margin-top: 90px;
 
     }
-    .container {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+
 
     /* Banner Principal */    
     .bannerPrincipal h1{
@@ -536,10 +530,6 @@ main .lanzamientoUno, .lanzamientoDos{
         display: none;
     }
 
-    .container {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 
     /* Banner Principal */    
     .bannerPrincipal h1{
