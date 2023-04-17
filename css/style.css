@@ -115,6 +115,7 @@ footer{
 
 .resumen{
     width: 200px;
+    display: none;
 }
 
 .legales{
@@ -510,13 +511,36 @@ main .lanzamientoUno, .lanzamientoDos{
     }
 
     /* estilos remeras page */
+
+    .remeraYDescripcion{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20% 80%;
+        margin-bottom: 2rem;
+    }
+
     .remeraYDescripcion h1{
+        grid-column: span 2;
         font-size: 4rem;
+    }
+
+    .remeraBG{
+        grid-column: span 1;
+    }
+
+    .remeraBG img{
+        width: 100%;
+        height: 100%;        
+    }
+
+    
+    .descripcionDeLaRemera{
+        grid-column: span 1;
     }
 
     /* footer */
     .resumen{
         width: 300px;
+        display: block;
     }
     
 }
@@ -595,7 +619,7 @@ main .lanzamientoUno, .lanzamientoDos{
     /* estilos remeras page */
 
     .remeraYDescripcion{
-        grid-template-columns: 2fr;
+        grid-template-columns: 40% 60%;
         grid-template-rows: 20% 80%;
         margin-bottom: 2rem;
     }
@@ -605,7 +629,7 @@ main .lanzamientoUno, .lanzamientoDos{
     }
 
     .remeraBG img{
-        width: auto;
+        width: 100%;
         height: 100%;        
     }
 
