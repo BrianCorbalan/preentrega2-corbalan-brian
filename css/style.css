@@ -380,7 +380,7 @@ main .lanzamientoUno, .lanzamientoDos{
 .remeraYDescripcion{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 60%,40%);
+    grid-template-rows: 10% 60% 30%;
     gap: 1rem;
 }
 
@@ -397,9 +397,10 @@ main .lanzamientoUno, .lanzamientoDos{
 .remeraBG img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.remeraBG h1{
+.remeraYDescripcion h1{
     font-size: 3rem;
 }
 
@@ -513,6 +514,12 @@ main .lanzamientoUno, .lanzamientoDos{
         grid-column: span 1;
 
     }
+
+    /* estilos remeras page */
+    .remeraYDescripcion h1{
+        font-size: 4rem;
+    }
+
     /* footer */
     .resumen{
         width: 300px;
@@ -588,17 +595,43 @@ main .lanzamientoUno, .lanzamientoDos{
         height: 50vh;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
-    }
-    
-    /* footer */
-    .resumen{
-        width: 600px;
-    }
+    } 
 
     /* seccion ofertas */
     .ofertasOfertas{
         height: 75vh;
-    }    
+    } 
+
+    /* estilos remeras page */
+
+    .remeraYDescripcion{
+        grid-template-columns: 2fr;
+        grid-template-rows: 20% 80%;
+        margin-bottom: 2rem;
+    }
+
+    .remeraBG{
+        grid-column: span 1;
+    }
+
+    .remeraBG img{
+        width: auto;
+        height: 100%;        
+    }
+
+    .remeraYDescripcion h1{
+        grid-column: span 2;
+        font-size: 4rem;
+    }
+
+    .descripcionDeLaRemera{
+        grid-column: span 1;
+    }
+
+    /* footer */
+    .resumen{
+        width: 600px;
+    }
 }
 
 
