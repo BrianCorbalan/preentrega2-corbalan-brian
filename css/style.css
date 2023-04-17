@@ -95,9 +95,13 @@ p {
 }
 
 .whatsapp{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+    display: none;
+}
+
+.whatsappPhone{
+    position: sticky;
+    bottom: 20%;
+    left: 85%;
 }
 
 /* footer */
@@ -542,6 +546,12 @@ main .lanzamientoUno, .lanzamientoDos{
         width: 300px;
         display: block;
     }
+
+    .whatsappPhone{
+        position: sticky;
+        bottom: 30%;
+        left: 90%;
+    }
     
 }
 
@@ -645,6 +655,18 @@ main .lanzamientoUno, .lanzamientoDos{
     /* footer */
     .resumen{
         width: 600px;
+    }
+
+    .whatsapp{
+        display: block;
+        position: sticky;
+        bottom: 25%;
+        left: 85%;
+    }
+    
+    .whatsappPhone{
+        display: none;
+
     }
 }
 
