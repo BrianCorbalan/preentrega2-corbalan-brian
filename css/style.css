@@ -380,7 +380,7 @@ main .lanzamientoUno, .lanzamientoDos{
 .remeraYDescripcion{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 60%,40%);
+    grid-template-rows: repeat(3, 10% 60% 30%);
     gap: 1rem;
 }
 
@@ -394,13 +394,18 @@ main .lanzamientoUno, .lanzamientoDos{
 
 }
 
-.remeraBG img{
+.remera img{
     width: 100%;
-    height: 100%;
+    height: 85%;
+    z-index: 5;
 }
 
-.remeraBG h1{
+.remeraYDescripcion h1{
+
+    top: 50px;
     font-size: 3rem;
+    text-align: center;
+    z-index: 1;
 }
 
 
